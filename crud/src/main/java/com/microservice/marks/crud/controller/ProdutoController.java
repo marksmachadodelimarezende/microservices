@@ -27,6 +27,7 @@ public class ProdutoController {
 
     @Autowired
     public ProdutoController(ProdutoService produtoService, PagedResourcesAssembler<ProdutoVO> produtoPagedResourcesAssembler) {
+        /* ERRO DE INJECAO DO AUTOWIRED NO INTELLIJ É FALSO. BUILD OCORRE SEM PROBLEMAS */
         this.produtoService = produtoService;
         this.produtoPagedResourcesAssembler = produtoPagedResourcesAssembler;
     }
