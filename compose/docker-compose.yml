@@ -1,7 +1,16 @@
 version: '3'
+
 services:
   rabbitmq:
     image: rabbitmq:3.8.3-management
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
     ports:
       - 5672:5672
       - 15672:15672
