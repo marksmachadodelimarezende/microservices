@@ -1,5 +1,8 @@
 package com.microservice.marks.pagamento.entity;
 
+import com.microservice.marks.pagamento.data.vo.ProdutoVendaVO;
+import org.modelmapper.ModelMapper;
+
 import javax.persistence.*;
 
 @Entity
@@ -50,5 +53,9 @@ public class ProdutoVenda {
 
     public void setVenda(Venda venda) {
         this.venda = venda;
+    }
+
+    public static ProdutoVenda create(ProdutoVendaVO produtoVendaVO) {
+        return new ModelMapper().map(produtoVendaVO, ProdutoVenda.class);
     }
 }
