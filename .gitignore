@@ -24,6 +24,3 @@ hs_err_pid*
 
 # Folders
 _repository
-
-# Docker Storage Folder
-compose/storage
