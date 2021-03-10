@@ -26,7 +26,7 @@ public class ProdutoSendMessage {
     }
 
     public void sendMessage(ProdutoVO produtoVO) {
-        log.info("Mensagem sendo enviada para Exchange '".concat(exchange).concat("' Routingkey '").concat(routingkey).concat("'"));
+        log.info("Produto sendo enviado ".concat(produtoVO.toString()));
         rabbitTemplate.convertAndSend(exchange, routingkey, produtoVO);
     }
 }
