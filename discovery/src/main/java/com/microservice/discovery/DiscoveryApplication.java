@@ -17,7 +17,7 @@ public class DiscoveryApplication {
 	}
 
 	private static void logRunnerInitial() {
-		log.info("MICROSERVICE AUTH IS RUNNING");
+		log.info("MICROSERVICE DISCOVERY (Service Registry) IS RUNNING");
 	}
 
 }
